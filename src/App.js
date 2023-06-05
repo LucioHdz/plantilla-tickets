@@ -27,7 +27,7 @@ function captureScreen() {
 
 
 function App() {
-  // const [plan, setPlan] = useState('');
+  const [plan, setPlan] = useState('');
   const [horas, setHoras] = useState('');
   const [velocidad, setVelocidad] = useState('');
   const [red, setRed] = useState('FICHAS-TESJI-E2');
@@ -39,10 +39,10 @@ function App() {
   return (
     <div className="App">
       <form className='form' onSubmit={ok}>
-        {/* <input type='text' placeholder='Nombre Plan' onChange={(e) => setPlan(e.target.value)} /> */}
         <input type='text' placeholder='Horas' onChange={(e) => setHoras(e.target.value)} />
         <input type='text' placeholder='Velocidad' onChange={(e) => setVelocidad(e.target.value)} />
         <input type='text' placeholder='Red' onChange={(e) => setRed(e.target.value)} />
+        <input type='number' placeholder='Numero Telefono' onChange={(e) => setPlan(e.target.value)} />
         <input type='number' placeholder='precio' onChange={(e) => setPrecio(e.target.value)} />
         <button >Capturar Pantalla</button>
 
@@ -58,7 +58,7 @@ function App() {
               <br/>
               <br/>
               <br/>
-              {/* <p className='fs'>Paquete: {plan}</p> */}
+              <p className='fs'>Contacto: {plan}</p>
               <p className='fs'>Horas: {horas} horas</p>
               <p className='fs'>Velocidad: {velocidad} Mb/s</p>
               <p className='fs'>Wifi: {red}</p>
