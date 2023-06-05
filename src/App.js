@@ -55,9 +55,6 @@ function App() {
             <img src={logo} className='imagen' />
             <img src={qr} className='imagen2' />
             <div className='datos'>
-              <br/>
-              <br/>
-              <br/>
               <p className='fs'>Contacto: {plan}</p>
               <p className='fs'>Horas: {horas} horas</p>
               <p className='fs'>Velocidad: {velocidad} Mb/s</p>
