@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.css'
 import logo from './img/logo_transparent.png'
 import qr from './img/qr2.png'
-import qr2 from './img/qr2.jpg'
 import html2canvas from 'html2canvas';
 
 
